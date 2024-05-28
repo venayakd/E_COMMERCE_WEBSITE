@@ -1,0 +1,27 @@
+<div class="header">Our frequently bought products </div>
+
+<div class="container_main">
+
+    <div class="cont1">
+        <div class="container1" *ngFor="let item of Frequentproducts1 ">
+            <div class="frequent-product">
+                <img src={{item.url}} alt="{{item.name}}" height=280 width=300>
+                <div class="product-details">
+                    <div class="product-name">{{item.name}}</div>
+                    <div class="product-price">₹{{item.price}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cont2">
+        <div class="container2" *ngFor="let item of Frequentproducts2 ">
+            <div class="frequent-product">
+                <img src={{item.url}} alt="{{item.name}}" height=280 width=300>
+                <div class="product-details">
+                    <div class="product-name">{{item.name}}</div>
+                    <div class="product-price">₹{{item.price}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

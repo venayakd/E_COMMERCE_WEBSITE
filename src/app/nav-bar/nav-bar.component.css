@@ -1,0 +1,54 @@
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+  }
+  
+  .brandName {
+    order: 1;
+    font-weight: 400;
+    font-family: fantasy;
+    font-size: medium;
+    background: -webkit-linear-gradient(#5ae1f6, #059fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .navbar_options {
+    order: 2;
+    display: flex;
+  }
+  
+  .categories,
+  .products {
+    justify-content: space-between;
+    margin-left: 1em;
+    font-weight: 400;
+    font-family: system-ui;
+    font-size: smaller;
+    text-shadow: 1px 1px grey;
+  }
+  
+  .cart,
+  .profile {
+    margin-left: 7px;
+    margin-top: 2px;
+    justify-content: space-between;
+  }
+  
+  /* Add media query for screens smaller than 600px */
+  @media screen and (max-width: 600px) {
+    .navbar_options {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .categories,
+    .products,
+    .cart,
+    .profile {
+      margin-left: 0;
+      margin-top: 5px;
+    }
+  }
